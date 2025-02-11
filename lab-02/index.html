@@ -34,28 +34,24 @@
         </p>
     </article>
 
+
     <article>
-        <h2>Addendum</h2>
-        <p>
-            The structure of the webpage was designed using semantic HTML elements for clarity and readability. 
-            The `<header>` tag contains the main title and publication details, ensuring the document's purpose is immediately clear. 
-            The `<article>` tag is used to encapsulate the main content of the paper, providing a self-contained section. 
-            Headings, such as `<h2>`, are used to divide the content into logical sections like Abstract and Introduction, making it easier to navigate. 
-            Paragraphs are wrapped in `<p>` tags to maintain clean formatting and a professional appearance. 
-            A `<footer>` is included at the bottom of the page, dynamically displaying the last modified date using JavaScript. 
-            This ensures transparency and keeps the document up to date. Overall, the structure follows semantic web principles, enhancing accessibility, usability, and maintainability.
-        </p>
+      <h2>Addendum</h2>
+      <ul>
+        <li><strong>Header:</strong> The `<header>` tag contains the main title and publication details, ensuring the document's purpose is immediately clear.</li>
+        <li><strong>Article:</strong> The `<article>` tag is used to encapsulate the main content of the paper, providing a self-contained section for better organization.</li>
+        <li><strong>Headings:</strong> Section headings like Abstract and Introduction are created using `<h2>` tags for logical hierarchy and improved readability.</li>
+        <li><strong>Paragraphs:</strong> The `<p>` tags wrap individual paragraphs, ensuring clean formatting and a professional appearance.</li>
+        <li><strong>Footer:</strong> The `<footer>` dynamically displays the "last modified" date using JavaScript, keeping the document updated and transparent.</li>
+        <li><strong>Semantic HTML Principles:</strong> The structure adheres to semantic web standards, improving accessibility, maintainability, and usability.</li>
+      </ul>
+      <p><strong>Last updated:</strong> <span id="lastModified"></span></p>
     </article>
 
-    <footer>
-        <p>Last updated: <span id="lastModified"></span></p>
-    </footer>
-
     <script>
-        const lastModified = document.lastModified;
-        document.querySelectorAll("#lastModified").forEach(el => {
-            el.textContent = lastModified;
-        });
+      const lastModified = document.lastModified;
+      document.getElementById("lastModified").textContent = lastModified;
     </script>
+
 </body>
 </html>
