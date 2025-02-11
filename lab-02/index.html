@@ -38,27 +38,18 @@
         <h2>Addendum</h2>
         <p>This section explains the HTML choices made for structuring the paper:</p>
         <ul>
-            <li><strong>Header:</strong> The `<header>` tag contains the main title and publication details, ensuring clarity and quick access to essential information.</li>
-            <li><strong>Article:</strong> The `<article>` tag encapsulates the entire paper content and the addendum, emphasizing its self-contained nature.</li>
-            <li><strong>Headings:</strong> Section headings are implemented using `<h2>` tags to create a clear content hierarchy and improve readability.</li>
-            <li><strong>Paragraphs:</strong> The `<p>` tags are used for paragraph content to ensure proper formatting and structure.</li>
-            <li><strong>Footer:</strong> A `<footer>` tag was included to dynamically display the last modified date, providing transparency about document updates.</li>
+            <li><strong>Header:</strong> Used for the main title and publication information.</li>
+            <li><strong>Article:</strong> Encompasses the entire paper content and the addendum.</li>
+            <li><strong>Section:</strong> Divides the paper into logical parts for easier reading and structure.</li>
+            <li><strong>Footer:</strong> Includes a dynamically generated last modified date for the document.</li>
         </ul>
-        <p>
-            These HTML choices follow semantic web principles, ensuring the document is accessible, maintainable, and aligned with modern standards.
-        </p>
         <p><strong>Last updated:</strong> <span id="lastModified"></span></p>
     </article>
-
-    <footer>
-        <p>Last updated: <span id="lastModified"></span></p>
-    </footer>
-
+    
     <script>
         const lastModified = document.lastModified;
-        document.querySelectorAll("#lastModified").forEach(el => {
-            el.textContent = lastModified;
-        });
+        document.getElementById("lastModified").textContent = lastModified;
     </script>
+
 </body>
 </html>
