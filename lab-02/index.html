@@ -14,38 +14,54 @@
 
     <article>
         <h2>Abstract</h2>
-        <p>The quality of content and the attractiveness of an environmental website can create an environmentally friendly attitude before one visits a secured area. Web applications, accessible via browsers over the Internet, have evolved significantly from static repositories to dynamic collaborative platforms. This study highlights advancements in web evaluation and modeling techniques like PROMETHEE II and its role in decision-making.</p>
+        <p>The quality of content and the attractiveness of an environmental website can create an environmentally friendly attitude before one visits a secured area. This paper evaluates environmental websites using models like PROMETHEE II to understand their effectiveness and robustness in ranking and usability.</p>
 
         <h2>Introduction</h2>
-        <p>The World Wide Web transitioned from static, non-interactive Web 1.0 into dynamic Web 2.0 environments. The evolution has influenced how environmental websites are built and assessed for their impact on user engagement and decision-making processes.</p>
-
-        <h2>Foundations of Web Analysis</h2>
-        <p>This section evaluates key principles like URLs for resource identification, HTML for structuring content, and HTTP as the communication protocol. These principles underlie the ability to standardize and assess web functionality and impact effectively.</p>
+        <p>The World Wide Web transitioned from static, non-interactive Web 1.0 into dynamic Web 2.0 environments. This evolution has influenced how websites are designed and evaluated for impact and functionality.</p>
 
         <h2>Future Trends</h2>
-        <p>The paper explores how semantic technologies can better structure unstructured data on websites. Enhancements to frameworks like PROMETHEE II improve decision-making by offering more robust and scalable approaches for data modeling and user interaction.</p>
+        <p>The paper explores how semantic web technologies can help better structure unstructured data and how models like PROMETHEE II can offer scalable approaches for web evaluation and improvement.</p>
 
         <h2>Conclusion</h2>
-        <p>In conclusion, web applications continue to evolve, focusing on agility, user engagement, and scalable data management. Evaluations like those offered by PROMETHEE II provide valuable insights for improving environmental websites and their influence on user behavior.</p>
+        <p>Web applications are continually evolving, focusing on improving user engagement and managing unstructured data effectively. This paper highlights the significance of models like PROMETHEE II in these advancements.</p>
+    </article>
+
+    <article>
+        <h2>Citation</h2>
+        <p>
+            The information and structure in this document are based on the following source:
+        </p>
+        <p>
+            Kabassi, K., & Martinis, A. (2021). Sensitivity Analysis of PROMETHEE II for the Evaluation of Environmental Websites. <em>Applied Sciences</em>, 11(19), 9215. 
+            <a href="https://www.mdpi.com/2076-3417/11/19/9215" target="_blank">https://www.mdpi.com/2076-3417/11/19/9215</a>
+        </p>
     </article>
 
     <article>
         <h2>Addendum</h2>
         <p>This section explains the HTML choices made for structuring the paper:</p>
         <ul>
-            <li><strong>Header:</strong> Used for the main title and publication information.</li>
-            <li><strong>Article:</strong> Encompasses the entire paper content and the addendum.</li>
-            <li><strong>Section:</strong> Divides the paper into logical parts for easier reading and structure.</li>
-            <li><strong>Footer:</strong> Includes a dynamically generated last modified date for the document.</li>
+            <li><strong>Header:</strong> The `<header>` tag contains the main title and publication details, ensuring clarity and quick access to essential information.</li>
+            <li><strong>Article:</strong> The `<article>` tag encapsulates the entire paper content and the addendum, emphasizing its self-contained nature.</li>
+            <li><strong>Headings:</strong> Section headings are implemented using `<h2>` tags to create a clear content hierarchy and improve readability.</li>
+            <li><strong>Paragraphs:</strong> The `<p>` tags are used for paragraph content to ensure proper formatting and structure.</li>
+            <li><strong>Footer:</strong> A `<footer>` tag was included to dynamically display the last modified date, providing transparency about document updates.</li>
         </ul>
+        <p>
+            These HTML choices follow semantic web principles, ensuring the document is accessible, maintainable, and aligned with modern standards.
+        </p>
         <p><strong>Last updated:</strong> <span id="lastModified"></span></p>
     </article>
-    
+
+    <footer>
+        <p>Last updated: <span id="lastModified"></span></p>
+    </footer>
+
     <script>
         const lastModified = document.lastModified;
-        document.getElementById("lastModified").textContent = lastModified;
+        document.querySelectorAll("#lastModified").forEach(el => {
+            el.textContent = lastModified;
+        });
     </script>
-    
 </body>
 </html>
-
